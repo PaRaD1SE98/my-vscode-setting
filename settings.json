@@ -29,6 +29,24 @@
                     "foreground": "#C3E88D",
                 }
             },
+            {
+                "scope":"variable.parameter.function.language.special.self",
+                "settings": {
+                    "foreground": "#ff5252",
+                }
+            },
+            {
+                "scope":"variable.language.special.self",
+                "settings": {
+                    "foreground": "#ff5252",
+                }
+            },
+            {
+                "scope":"source.python meta.member.access.python",
+                "settings": {
+                    "foreground": "#EEFFFF",
+                }
+            },
         ],
     },
     "files.autoSave": "afterDelay",
