@@ -1,0 +1,29 @@
+{
+    "workbench.colorTheme": "Material Theme High Contrast",
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ],
+    "terminal.integrated.inheritEnv": false,
+    "editor.fontFamily": "'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback', 'Menlo for Powerline'",
+    "editor.tokenColorCustomizations": {
+        "keywords": "#C792EA",
+        "textMateRules": [
+            {
+                "scope": "variable.parameter",
+                "settings": {
+                    "foreground": "#F78C6C"
+                }
+            },
+            {
+                "scope":"constant.character.escape",
+                "settings": {
+                    "foreground": "#89DDFF",
+                }
+            }
+        ],
+    },
+    "files.autoSave": "afterDelay"
+}
