@@ -7,7 +7,7 @@
         }
     ],
     "terminal.integrated.inheritEnv": false,
-    "editor.fontFamily": "'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback', 'Menlo for Powerline'",
+    "editor.fontFamily": "'Fira Code', 'Menlo for Powerline', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
     "editor.tokenColorCustomizations": {
         "keywords": "#C792EA",
         "textMateRules": [
@@ -22,8 +22,15 @@
                 "settings": {
                     "foreground": "#89DDFF",
                 }
-            }
+            },
+            {
+                "scope":"storage.type.string",
+                "settings": {
+                    "foreground": "#C3E88D",
+                }
+            },
         ],
     },
-    "files.autoSave": "afterDelay"
+    "files.autoSave": "afterDelay",
+    "debug.toolBarLocation": "docked",
 }
