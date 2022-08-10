@@ -1,16 +1,45 @@
 {
     "workbench.colorTheme": "Material Theme High Contrast",
-    "workbench.editorAssociations": [
-        {
-            "viewType": "jupyter.notebook.ipynb",
-            "filenamePattern": "*.ipynb"
-        }
-    ],
     "terminal.integrated.inheritEnv": false,
-    "editor.fontFamily": "'Fira Code', 'Menlo for Powerline', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.fontFamily": "'Fira Code', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback', 'Menlo for Powerline', 'NotoSansMono Nerd Font'",
+    "editor.semanticTokenColorCustomizations": {
+        "enabled": true,
+        "rules": {
+            "module": {
+                "foreground": "#c2f8fa"
+            }
+        }
+    },
     "editor.tokenColorCustomizations": {
         "keywords": "#C792EA",
         "textMateRules": [
+            {
+                "scope": [
+                    "constant.language",
+                    "keyword.operator.logical"
+                ],
+                "settings": {
+                    "foreground": "#C792EA"
+                }
+            },
+            {
+                "scope": "meta.function-call.arguments",
+                "settings": {
+                    "foreground": "#ffffffe0"
+                }
+            },
+            {
+                "scope": "variable.other.constant",
+                "settings": {
+                    "foreground": "#ffffffe0"
+                }
+            },
+            {
+                "scope": "variable.other.readwrite",
+                "settings": {
+                    "foreground": "#ffffffe0"
+                }
+            },
             {
                 "scope": "variable.parameter",
                 "settings": {
@@ -18,37 +47,64 @@
                 }
             },
             {
-                "scope":"constant.character.escape",
+                "scope": "constant.character.escape",
                 "settings": {
-                    "foreground": "#89DDFF",
+                    "foreground": "#89DDFF"
                 }
             },
             {
-                "scope":"storage.type.string",
+                "scope": "storage.type.string",
                 "settings": {
-                    "foreground": "#C3E88D",
+                    "foreground": "#C3E88D"
                 }
             },
             {
-                "scope":"variable.parameter.function.language.special.self",
+                "scope": "variable.parameter.function.language.special.self",
                 "settings": {
-                    "foreground": "#ff5252",
+                    "foreground": "#ff5252"
                 }
             },
             {
-                "scope":"variable.language.special.self",
+                "scope": "variable.language.special.self",
                 "settings": {
-                    "foreground": "#ff5252",
+                    "foreground": "#ff5252"
                 }
             },
             {
-                "scope":"source.python meta.member.access.python",
+                "scope": "source.python meta.member.access.python",
                 "settings": {
-                    "foreground": "#EEFFFF",
+                    "foreground": "#EEFFFF"
                 }
             },
         ],
     },
     "files.autoSave": "afterDelay",
     "debug.toolBarLocation": "docked",
+    "editor.fontLigatures": true,
+    "tabnine.experimentalAutoImports": true,
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook",
+        "*.tmpl": "default"
+    },
+    "autoDocstring.docstringFormat": "sphinx",
+    "editor.formatOnType": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "bracketPairColorizer.depreciation-notice": false,
+    "editor.inlineSuggest.enabled": true,
+    "github.copilot.enable": {
+        "*": true,
+        "yaml": true,
+        "plaintext": true,
+        "markdown": false
+    },
+    "[gotmpl]": {},
+    "files.associations": {
+        "*.tmpl": "gohtml"
+    },
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "editor.fontSize": 18,
+    "debug.console.fontSize": 20,
+    "terminal.integrated.fontSize": 18,
+    "markdown.preview.fontSize": 18
 }
